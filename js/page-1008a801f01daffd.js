@@ -39,8 +39,8 @@
             });
             return
           }
-          n.ZP.sendForm("service_dlgsppw", "template_7ozl", e.current, {
-            publicKey: "Zd"
+          n.ZP.sendForm("service_dlgsppw", "template_7ol", e.current, {
+            publicKey: "Zdd"
           }).then(()=>{},
           e =>{}),
           e.current.reset(),
