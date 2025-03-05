@@ -40,7 +40,7 @@
             return
           }
           n.ZP.sendForm("service_dlgsppw", "template_7ol", e.current, {
-            publicKey: "Zdd"
+            publicKey: "Zddd"
           }).then(()=>{},
           e =>{}),
           e.current.reset(),
