@@ -935,7 +935,7 @@
                 children: [(0, a.jsx)("span", {
                   className: "gradient_hero",
                   children: s("Data")
-                }), (0, a.jsx)(P, {}), " ", s("Enginee")]
+                }), (0, a.jsx)(P, {}), " ", s("Engineer")]
               }), "pt-BR" != e && (0, a.jsxs)(f.E.div, {
                 variants: W,
                 className: "flex items-center gap-6 lg:gap-4 xs:gap-3",
