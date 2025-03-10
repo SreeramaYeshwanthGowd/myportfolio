@@ -704,8 +704,8 @@
       }
       var O = t(2022);
       let X = {
-        "pt-BR": "https://pub-23b2bdccea9b4dd0aa82eeba1d9c6805.r2.dev/curriculo/Eric%20Augusto%20Dev%20Front%20End%20-%20Curr%C3%ADculo.pdf",
-        en: "https://pub-23b2bdccea9b4dd0aa82eeba1d9c6805.r2.dev/curriculo/Eric%20Augusto%20Front%20End%20Dev%2-%20Resume.pdf"
+        "pt-BR": "",
+        en: ""
       };
       var Y = t(6164);
       function H() {
@@ -970,7 +970,7 @@
                 })
                 // , 
                 // (0, a.jsxs)("a", {
-                //   href: "https://www.linkedin.com/in/eric-augusto-775245a9/",
+                //   href: "",
                 //   target: "_blank",
                 //   className: "group",
                 //   children: [(0, a.jsx)("span", {
@@ -982,7 +982,7 @@
                 // })
                 // , 
                 // (0, a.jsxs)("a", {
-                //   href: "https://wa.me/5571981886126",
+                //   href: "",
                 //   target: "_blank",
                 //   className: "group",
                 //   children: [(0, a.jsx)("span", {
