@@ -320,13 +320,16 @@
             date: "Apr 2019 / Nov 2021",
             obligations: [e("Responsibilities.point6"), e("Responsibilities.point7"), e("Responsibilities.point8")],
             achievements: [e("Achievements.point6"), e("Achievements.point7"), e("Achievements.point8")],
-          },
+          }
+          ,
         t = {
           title: e("Intern.title"),
           company: "Texas State University",
           date: e("date.intern"),
-          obligations: [e("Responsibilities.point4"), e("Responsibilities.point5")],
-        };
+          obligations: [e("Responsibilities.point4"), e("Responsibilities.point5")]
+          ,
+        }
+        ;
         return (0, a.jsxs)("section", {
           className: "relative scroll-mt-16 ",
           id: "experience",
@@ -339,8 +342,10 @@
           }), (0, a.jsxs)("div", {
             className: "flex flex-col divide-y-[1px] gap-6",
             children: [(0, a.jsx)(g, {...s
-            }), (0, a.jsx)(g, {...t
-            }), (0, a.jsx)(g, {...u
+            })
+            // , (0, a.jsx)(g, {...t
+            // })
+            , (0, a.jsx)(g, {...u
             })]
           })]
         })
