@@ -1156,7 +1156,7 @@
           name: "Databricks",
           isOnline: !0,
           link: "https://credentials.databricks.com/fd64c120-851c-44d8-8982-1bd27766ad43#acc.JX83NS2D",
-          img: "images/databricks_17.png",
+          img: "images/databricks_18.png",
           // gif: "images/databricks_gif.gif",
           description: e("os"),
           skills: ["react", "ts", "scss", "figma"]
