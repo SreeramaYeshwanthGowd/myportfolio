@@ -1089,7 +1089,7 @@
           children: [(0, a.jsx)("span", {
             className: "absolute inset-0 bg-box-gradient opacity-0 -z-10 transition-opacity duration-300 ease-in-out rounded-[30px] group-hover:opacity-100"
           }), (0, a.jsx)("div", {
-            className: "bg-white rounded-t-3xl overflow-hidden rounded-b-xl h-[300px] lg:h-[150px]  w-full bg-cover bg-no-repeat ".concat(K().box_img)
+            className: "bg-black rounded-t-3xl overflow-hidden rounded-b-xl h-[300px] lg:h-[150px]  w-full bg-cover bg-no-repeat ".concat(K().box_img)
           }), (0, a.jsxs)("div", {
             className: "mt-6 font-code",
             children: [(0, a.jsx)("span", {
