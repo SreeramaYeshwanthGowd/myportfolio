@@ -105,7 +105,7 @@
               children: (0, a.jsx)("div", {
                 className: "svgMask betterhover:group-hover:translate-x-1 transition-all group-active:!translate-x-2 cursor-pointer size-6 rotate-180  dark:bg-black bg-white",
                 style: {
-                  maskImage: 'url("images/apache_spark.png")'
+                  maskImage: 'url("images/gcp_13.png")'
                   
                 }
               })
@@ -1156,7 +1156,7 @@
           name: "Databricks",
           isOnline: !0,
           link: "https://credentials.databricks.com/fd64c120-851c-44d8-8982-1bd27766ad43#acc.JX83NS2D",
-          img: "images/databricks_4.png",
+          img: "images/databricks_10.png",
           // gif: "images/databricks_gif.gif",
           description: e("os"),
           skills: ["react", "ts", "scss", "figma"]
@@ -1164,7 +1164,7 @@
         {
           name: "Google Cloud",
           isOnline: !0,
-          img: "images/gcp_8.png",
+          img: "images/gcp_13.png",
           // gif: "images/discourse.gif",
           link: "https://www.credly.com/badges/e879bce1-0a8d-4b6a-929c-4cb276420cf2/linked_in_profile",
           description: e("disc"),
@@ -1173,7 +1173,7 @@
         {
           name: "Azure",
           subtitle: "Microsoft Certified",
-          img: "images/azure-6.png",
+          img: "images/azure_11.png",
           link: "https://learn.microsoft.com/api/credentials/share/en-us/YESHWANTHGOWDSREERAMA-2846/6BBFEF31D9BBC071?sharingId",
           description: e("jdm"),
           skills: ["angular", "ts", "html", "scss", "figma"]
