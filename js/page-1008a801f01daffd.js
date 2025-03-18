@@ -468,18 +468,18 @@
       function S() {
         let e = (0, c.useTranslations)("LocaleSwitcher"),
         s = (0, c.useLocale)();
-        return (0, a.jsx)(C, {
-          defaultValue: s.replace("-", "_"),
-          label: e("label"),
-          children: ["en", "pt_BR"].map(s =>(0, a.jsx)("option", {
-            value: s,
-            className: "bg-black text-white text-center",
-            children: e("locale", {
-              locale: s
-            })
-          },
-          s))
-        })
+        // return (0, a.jsx)(C, {
+        //   defaultValue: s.replace("-", "_"),
+        //   label: e("label"),
+        //   children: ["en", "pt_BR"].map(s =>(0, a.jsx)("option", {
+        //     value: s,
+        //     className: "bg-black text-white text-center",
+        //     children: e("locale", {
+        //       locale: s
+        //     })
+        //   },
+        //   s))
+        // })
       }
       var F = t(750);
       let M = () =>{ (0, c.useTranslations)("");
