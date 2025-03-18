@@ -138,7 +138,7 @@
                 children: [(0, a.jsx)("a", {
                   href: "mailto:yeshwanthgowdsreerama@gmail.com",
                   target: "_blank",
-                  className: "size-[80%]  duration-300  bg-[black] transition-all hover:betterhover:opacity-70  outline rounded-[40px] p-4 justify-center",
+                  className: "size-[80%]  duration-300  bg-[black] transition-all hover:betterhover:opacity-70  outline rounded-[40px] p-4 flex items-center justify-center",
                   children: (0, a.jsx)("img", {
                     src: "images/gmail_222.png",
                     alt: "Whatsapp",
@@ -161,7 +161,7 @@
                 (0, a.jsx)("a", {
                   href: "https://wa.me/7373730226",
                   target: "_blank",
-                  className: "size-[80%]  duration-300  bg-[rgb(58, 126, 99)] transition-all hover:betterhover:opacity-70  outline rounded-[40px] p-4 justify-center",
+                  className: "size-[80%]  duration-300  bg-[rgb(58, 126, 99)] transition-all hover:betterhover:opacity-70  outline rounded-[40px] p-4 flex items-center justify-center",
                   children: (0, a.jsx)("img", {
                     src: "images/whatsapp.svg",
                     alt: "Whatsapp",
@@ -1007,61 +1007,61 @@
           name: "Python",
           image: "images/py.webp",
           color: "#FE38BA",
-          exp: "5+"
+          exp: "6+"
         },
         react: {
           name: "SQL",
           image: "images/database.svg",
           color: "#61DAFB",
-          exp: "5+"
+          exp: "6+"
         },
         next: {
           name: "Databricks",
           image: "images/Databricks_icon.png",
           color: "#aeb2ba",
-          exp: "5+"
+          exp: "6+"
         },
         tailwind: {
           name: "Azure Data Factory",
           image: "images/Azure_Data_Factory_4.png",
           color: "#38B2AC",
-          exp: "5+"
+          exp: "6+"
         },
         ts: {
           name: "Apache Spark",
           image: "images/spark_2.png",
           color: "#3178C6",
-          exp: "5+"
+          exp: "6+"
         },
         py: {
           name: "Git",
           image: "images/git.png",
           color: "#3776AB",
-          exp: "5+"
+          exp: "6+"
         },
         scss: {
           name: "Jira",
           image: "images/Jira.png",
           color: "#CD6799",
-          exp: "5+"
+          exp: "6+"
         },
         html: {
           name: "Apache Kafka",
           image: "images/kafka_2.png",
           color: "#E34F26",
-          exp: "5+"
+          exp: "6+"
         },
         git: {
           name: "AWS",
           image: "images/AWS.png",
           color: "#F05032",
-          exp: "4+"
+          exp: "5+"
         },
         figma: {
           name: "Google Cloud",
           image: "images/GCP.png",
           color: "#F24E1E",
-          exp: "3+"
+          exp: "5+"
         }
       };
       var G = t(4148),
@@ -1077,7 +1077,7 @@
           subtitle: d,
           isOnline: x
         } = e,
-        m = (0, c.useTranslations)("Projects");
+        m = (0, c.useTranslations)("Certifications");
         return (0, a.jsxs)("a", {
           href: o,
           target: "_blank",
@@ -1088,9 +1088,23 @@
           className: "shadow-[0_0_10px_#00000040] dark:shadow-[0_0_20px_#ffffff30] relative z-10 transition-all overflow-visible p-4 cursor-pointer border-solid border-[1px] rounded-[30px] h-[500px] lg:h-[350px] flex flex-col gradient group ".concat(K().box),
           children: [(0, a.jsx)("span", {
             className: "absolute inset-0 bg-box-gradient opacity-0 -z-10 transition-opacity duration-300 ease-in-out rounded-[30px] group-hover:opacity-100"
-          }), (0, a.jsx)("div", {
-            className: "bg-black rounded-t-3xl overflow-hidden rounded-b-xl h-[300px] lg:h-[150px]  w-full bg-cover bg-no-repeat ".concat(K().box_img)
-          }), (0, a.jsxs)("div", {
+          })
+          , 
+          // (0, a.jsx)("div", {
+          //   className: "bg-black rounded-t-3xl overflow-hidden rounded-b-xl h-[300px] lg:h-[150px]  w-full bg-cover bg-no-repeat bg-center flex items-center justify-center".concat(K().box_img)
+          // })
+          (0, a.jsxs)("div", {
+            className: "bg-black rounded-t-3xl overflow-hidden rounded-b-xl h-[300px] lg:h-[150px] w-full flex items-center justify-center", // Removed background classes, added flex centering
+            children: [
+              (0, a.jsx)("img", {
+                src: s, // Make sure this matches your image source prop
+                className: "max-w-full max-h-full object-contain",
+                alt: l // Make sure this matches your alt text variable
+              })
+            ]
+          })
+
+          , (0, a.jsxs)("div", {
             className: "mt-6 font-code",
             children: [(0, a.jsx)("span", {
               className: "text-3xl lg:text-2xl sm:text-xl font-bold",
@@ -1151,12 +1165,12 @@
         }
       };
       function ee() {
-        let e = (0, c.useTranslations)("Projects"),
+        let e = (0, c.useTranslations)("certifications"),
         s = [{
           name: "Databricks",
           isOnline: !0,
           link: "https://credentials.databricks.com/fd64c120-851c-44d8-8982-1bd27766ad43#acc.JX83NS2D",
-          img: "images/databricks_18.png",
+          img: "images/databricks_21.png",
           // gif: "images/databricks_gif.gif",
           description: e("os"),
           skills: ["react", "ts", "scss", "figma"]
@@ -1164,7 +1178,7 @@
         {
           name: "Google Cloud",
           isOnline: !0,
-          img: "images/gcp_32.png",
+          img: "images/gcp_35.png",
           // gif: "images/discourse.gif",
           link: "https://www.credly.com/badges/e879bce1-0a8d-4b6a-929c-4cb276420cf2/linked_in_profile",
           description: e("disc"),
@@ -1173,7 +1187,7 @@
         {
           name: "Azure",
           subtitle: "Microsoft Certified",
-          img: "images/azure_18.png",
+          img: "images/azure_19.png",
           link: "https://learn.microsoft.com/api/credentials/share/en-us/YESHWANTHGOWDSREERAMA-2846/6BBFEF31D9BBC071?sharingId",
           description: e("jdm"),
           skills: ["angular", "ts", "html", "scss", "figma"]
@@ -1203,7 +1217,7 @@
             viewport: {
               once: !0
             },
-            className: "grid grid-cols-3 gap-[60px] md:gap-9 lg:gap-2 my-[40px] dots md:grid-cols-1",
+            className: "grid grid-cols-3 gap-[60px] md:gap-9 lg:gap-2 my-[40px] dots md:grid-cols-1 justify-items-center",
             children: s.map(e =>(0, a.jsx)(f.E.li, {
               variants: $,
               children: (0, a.jsx)(Q, {...e
