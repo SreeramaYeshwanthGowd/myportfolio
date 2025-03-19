@@ -2491,11 +2491,11 @@ body {
     background-image: conic-gradient(from var(--angle), #000 80%, #fff 88%, #fff 92%, #000 100%) !important
 }
 
-@supports not (background:paint(something)) {
+/* @supports not (background:paint(something)) {
     .gradient:before {
         background-image: conic-gradient(#381d6a 80%, #e0d1ff 88%, #e0d1ff 92%, #381d6a 100%)
     }
-}
+} */
 
 @property --angle {
     syntax: "<angle>";
