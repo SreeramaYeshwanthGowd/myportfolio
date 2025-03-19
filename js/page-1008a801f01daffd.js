@@ -100,16 +100,17 @@
             children: [(0, a.jsx)("span", {
               className: "mx-auto ml-8",
               children: i("send")
-            }), (0, a.jsx)("div", {
+            }), 
+            (0, a.jsx)("div", {
               className: "dark:bg-white bg-black  rounded-full h-6 w-14 flex items-center justify-end px-2",
               children: (0, a.jsx)("div", {
                 className: "svgMask betterhover:group-hover:translate-x-1 transition-all group-active:!translate-x-2 cursor-pointer size-6 rotate-180  dark:bg-black bg-white",
                 style: {
-                  maskImage: 'url("images/gcp_13.png")'
-                  
+                  maskImage: 'url("images/arrow.svg")'
                 }
               })
-            })]
+            })
+          ]
           })]
         })
       };
@@ -881,7 +882,7 @@
           ref: t,
           replay: i
         } = (0, O.b)({
-          text: "フロントエンドデベロッパー",
+          text: "シニアデータエンジニア",
           speed: .5
         }),
         {
@@ -939,7 +940,8 @@
                 className: "flex items-center gap-6 lg:gap-4 xs:gap-3",
                 children: [(0, a.jsx)("span", {
                   className: "gradient_hero",
-                  children: s("Data")
+                  // children: s("Data"),
+                  children: "Senior Data",
                 }), (0, a.jsx)(P, {}), " ", s("Engineer")]
               }), "pt-BR" != e && (0, a.jsxs)(f.E.div, {
                 variants: W,
