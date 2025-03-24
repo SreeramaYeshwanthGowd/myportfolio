@@ -1006,61 +1006,61 @@
       };
       let q = {
         angular: {
-          name: "Python",
+          name: "With Python",
           image: "images/py.webp",
           color: "#FE38BA",
           exp: "6+"
         },
         react: {
-          name: "SQL",
+          name: "With SQL",
           image: "images/database.svg",
           color: "#61DAFB",
           exp: "6+"
         },
         next: {
-          name: "Databricks",
+          name: "With Databricks",
           image: "images/Databricks_icon.png",
           color: "#aeb2ba",
           exp: "6+"
         },
         tailwind: {
-          name: "Azure Data Factory",
+          name: "With Azure Data Factory",
           image: "images/Azure_Data_Factory_4.png",
           color: "#38B2AC",
           exp: "6+"
         },
         ts: {
-          name: "Apache Spark",
+          name: "With Apache Spark",
           image: "images/spark_2.png",
           color: "#3178C6",
           exp: "6+"
         },
         py: {
-          name: "Git",
+          name: "With Git",
           image: "images/git.png",
           color: "#3776AB",
           exp: "6+"
         },
         scss: {
-          name: "Jira",
+          name: "With Jira",
           image: "images/Jira.png",
           color: "#CD6799",
           exp: "6+"
         },
         html: {
-          name: "Apache Kafka",
+          name: "With Apache Kafka",
           image: "images/kafka_2.png",
           color: "#E34F26",
           exp: "6+"
         },
         git: {
-          name: "AWS",
+          name: "With AWS",
           image: "images/AWS.png",
           color: "#F05032",
           exp: "5+"
         },
         figma: {
-          name: "Google Cloud",
+          name: "With Google Cloud",
           image: "images/GCP.png",
           color: "#F24E1E",
           exp: "5+"
