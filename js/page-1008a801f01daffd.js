@@ -499,7 +499,12 @@
           children: [(0, a.jsx)(I, {
             setPosition: s,
             children: "home"
-          }), (0, a.jsx)(I, {
+          }),
+          (0, a.jsx)(I, {
+            setPosition: s,
+            children: "projects" // changed from "projects" to "certifications"
+          }),  
+          (0, a.jsx)(I, {
             setPosition: s,
             children: "certifications" // changed from "projects" to "certifications"
           }), (0, a.jsx)(I, {
@@ -546,7 +551,7 @@
           })
         })
       },
-      R = e =>{
+      R = e=>{
         let {
           position: s
         } = e;
@@ -556,7 +561,7 @@
           className: "absolute z-0 h-7 rounded-full bg-white dark:bg.black"
         })
       };
-      var A = () =>{
+      var A = ()=>{
         let e = (0, l.useRef)(),
         s = (0, l.useRef)(),
         t = (0, c.useTranslations)("Header"),
@@ -564,7 +569,7 @@
           var a; (null == s ? void 0 : null === (a = s.current) || void 0 === a ? void 0 : a.contains(t.target)) || !(window.innerWidth <= 767) || e.current.classList.add("hidden")
         };
         return (0, l.useEffect)(() =>{
-          let s = window.addEventListener("resize", () =>{
+          let s = window.addEventListener("resize", ()=>{
             e.current && e.current.classList.add("hidden")
           });
           return () =>window.removeEventListener("resize", s)
@@ -597,7 +602,7 @@
                 children: (0, a.jsx)(j, {})
               }), (0, a.jsx)("button", {
                 ref: s,
-                onClick: () =>{
+                onClick: ()=>{
                   let s = e.current.classList;
                   s.contains("hidden") ? s.remove("hidden") : s.add("hidden")
                 },
@@ -629,36 +634,36 @@
       T = t(9805),
       D = t(4446);
       let L = ["images/kashi-os.png", "images/discord_clone.png", "images/apache_spark.png"];
-      var B = () =>{
+      var B = ()=>{
         let[e, s] = (0, l.useState)(0),
         t = (0, l.useRef)(null),
         i = (0, l.useRef)(null); (0, T._)();
         let n = (0, l.useRef)(null),
-        r = () =>{
+        r = ()=>{
           clearInterval(t.current),
-          t.current = setInterval(() =>{
+          t.current = setInterval(()=>{
             s(e =>(e + 1) % L.length)
           },
           3e3)
-        }; (0, l.useEffect)(() =>(r(), () =>{
+        }; (0, l.useEffect)(()=>(r(), ()=>{
           clearInterval(t.current)
         }), []),
-        (0, l.useEffect)(() =>{
-          let e = () =>{
+        (0, l.useEffect)(()=>{
+          let e = ()=>{
             document.hidden ? clearInterval(t.current) : (s(e =>(e + 1) % L.length), r())
           };
           return document.addEventListener("visibilitychange", e),
-          () =>{
+          ()=>{
             document.removeEventListener("visibilitychange", e),
             clearInterval(t.current)
           }
         },
         []);
-        let o = () =>{
+        let o = ()=>{
           s(e =>(e + 1) % L.length),
           clearInterval(t.current),
           clearTimeout(i.current),
-          i.current = setTimeout(() =>{
+          i.current = setTimeout(()=>{
             r()
           },
           1e3)
@@ -719,7 +724,7 @@
         s = Array(e), t = 0; t < e; t++) s[t] = arguments[t];
         return (0, Y.m6)((0, k.W)(s))
       }
-      l.forwardRef((e, s) =>{
+      l.forwardRef((e, s)=>{
         let {
           parentRef: t,
           containerRef: i,
@@ -732,8 +737,8 @@
         }),
         [d, x] = (0, l.useState)(0),
         [m, p] = (0, l.useState)(!1);
-        return (0, l.useEffect)(() =>{
-          let e = setInterval(() =>{
+        return (0, l.useEffect)(()=>{
+          let e = setInterval(()=>{
             if (r.current && i.current && t.current && !m) {
               let e = r.current.getBoundingClientRect(),
               s = i.current.getBoundingClientRect(),
@@ -751,15 +756,15 @@
           return () =>clearInterval(e)
         },
         [m, i]),
-        (0, l.useEffect)(() =>{
-          o.detected && o.coordinates && (setTimeout(() =>{
+        (0, l.useEffect)(()=>{
+          o.detected && o.coordinates && (setTimeout(()=>{
             c({
               detected: !1,
               coordinates: null
             }),
             p(!1)
           },
-          2e3), setTimeout(() =>{
+          2e3), setTimeout(()=>{
             x(e =>e + 1)
           },
           2e3))
@@ -804,7 +809,7 @@
           })]
         })
       }).displayName = "CollisionMechanism";
-      let J = e =>{
+      let J = e=>{
         let {...s
         } = e,
         t = Array.from({
@@ -875,7 +880,7 @@
           opacity: 1
         }
       };
-      var Z = () =>{
+      var Z = ()=>{
         let e = (0, c.useLocale)(),
         s = (0, c.useTranslations)("Hero"),
         {
@@ -969,7 +974,7 @@
               ,(0, a.jsxs)("div", {
                 className: "flex items-center gap-4 xs:gap-2",
                 children: [(0, a.jsx)("a", {
-                  onClick: () =>{
+                  onClick: ()=>{
                     window.open(X[e])
                   }
                   // ,
@@ -1077,9 +1082,11 @@
           skills: r,
           link: o,
           subtitle: d,
-          isOnline: x
+          isOnline: x,
+          isProject: isProject // Add this prop
         } = e,
-        m = (0, c.useTranslations)("Certifications");
+        m = (0, c.useTranslations)(isProject ? "Projects" : "Certifications"); // Use appropriate translation key
+      
         return (0, a.jsxs)("a", {
           href: o,
           target: "_blank",
@@ -1136,9 +1143,9 @@
             })]
           }), (0, a.jsxs)("div", {
             className: "dark:bg-black lg:invisible bg-white px-1 text-[10px] gap-2 flex items-center rounded-full absolute bottom-3 right-5",
-            children: [m("status"), ": ", x ? "online": "online", " ", (0, a.jsx)("div", {
+            children: [isProject ? "Project.status" : "Certification.status", ": ", x ? "online" : "online", " ", (0, a.jsx)("div", {
               style: {
-                backgroundColor: x ? "#34d399": " #34d399"
+                backgroundColor: x ? "#34d399" : " #34d399"
               },
               className: "size-2 rounded-full animate-pulse"
             })]
@@ -1222,8 +1229,7 @@
             className: "grid grid-cols-3 gap-[60px] md:gap-9 lg:gap-2 my-[40px] dots md:grid-cols-1 justify-items-center",
             children: s.map(e =>(0, a.jsx)(f.E.li, {
               variants: $,
-              children: (0, a.jsx)(Q, {...e
-              })
+              children: (0, a.jsx)(Q, {...e}) // No isProject prop for Certifications
             },
             e.name))
           })]
@@ -1240,13 +1246,13 @@
           s && n(() =>e)
         },
         [x, m] = (0, l.useState)(),
-        p = () =>{
-          let e = setTimeout(() =>{},
+        p = ()=>{
+          let e = setTimeout(()=>{},
           500);
           n(() =>null),
           m(e)
         };
-        return (0, l.useEffect)(() =>{ (() =>{
+        return (0, l.useEffect)(()=>{ (() =>{
             let e = document.querySelector(".animate-text-slide");
             e && (e.classList.remove("animate-text-slide"), e.offsetWidth, e.classList.add("animate-text-slide"))
           })()
@@ -1307,12 +1313,76 @@
               style: {
                 backgroundImage: "url(".concat(q[e].image, ")")
               },
-              onMouseLeave: () =>p(),
-              onMouseOver: () =>d(q[e]),
+              onMouseLeave: ()=>p(),
+              onMouseOver: ()=>d(q[e]),
               className: "bg-center bg-no-repeat bg-contain rounded-3xl border-black/20  dark:border-[hsl(0,0%,9%)] border-[1px]  saturate-0 bg-origin-content transition-all  betterhover:hover:saturate-100 md:saturate-100 flex-grow-0  flex items-center justify-items-center p-6 sm:p-3"
             },
             e))]
           })
+        })
+      }
+      function Projects() {
+        let e = (0, c.useTranslations)(""),
+        s = [{
+          name: "BitStream",
+          isOnline: !0,
+          link: "https://bitcoin-mlops-dashboard.yeshwanthgowdsreerama.com/",
+          img: "images/bitcoin_2.jpg",
+          description: e("Real-time Bitcoin transactions processing with anomaly detection and minute-by-minute data refresh"),
+          skills: ["react", "ts", "scss", "figma"]
+        },
+        {
+          name: "Finance MLOps",
+          isOnline: !0,
+          img: "images/finance.jpg", 
+          link: "https://finance-mlops-dashboard.yeshwanthgowdsreerama.com/",
+          description: e("Monitoring financial markets live with billions of records processing in real-time."),
+          skills: ["next", "tailwind", "ts"]
+        },
+        {
+          name: "Crime Scope",
+          subtitle: "MLOps",
+          img: "images/crimerate.jpg",
+          link: "https://crimerate-mlops-dashboard.yeshwanthgowdsreerama.com/",
+          description: e("Global crime data insights engineered with Apache Spark and MLOps"),
+          skills: ["angular", "ts", "html", "scss", "figma"]
+        }];
+      
+        return (0, a.jsxs)(f.E.section, {
+          initial: {
+            opacity: 0
+          },
+          animate: {
+            opacity: 1
+          },
+          className: "scroll-mt-16",
+          id: "projects",
+          children: [(0, a.jsxs)("div", {
+            className: "flex flex-col gap-1 items-center",
+            children: [(0, a.jsx)("h2", {
+              className: "text-4xl sm:text-3xl xs:text-xl xxs:text-xl mb-3 lg:mb-1 sm:mb-0",
+              children: e("Projects")
+            }), (0, a.jsx)("label", {
+              className: "dark:bg-white/95 px-7 rounded-full text-center w-fit bg-accent-orange text-white dark:text-black/90 h-min flex-grow-0 lg:text-[10px] sm:text-[8px]",
+              children: e("Take a look at what I've been developing")
+            })]
+          }), (0, a.jsx)(f.E.ul, {
+            variants: U,
+            initial: "hidden",
+            whileInView: "visible",
+            viewport: {
+              once: !0
+            },
+            className: "grid grid-cols-3 gap-[60px] md:gap-9 lg:gap-2 my-[40px] dots md:grid-cols-1 justify-items-center",
+            children: s.map(e =>(0, a.jsx)(f.E.li, {
+              variants: $,
+              children: (0, a.jsx)(Q, {
+                ...e,
+                isProject: true // Add this prop for Projects
+              })
+            },
+            e.name))
+          })]
         })
       }
       function et() {
@@ -1342,7 +1412,14 @@
               })
             }), (0, a.jsx)(A, {}), (0, a.jsxs)("main", {
               className: "my-32 lg:my-10",
-              children: [(0, a.jsx)(Z, {}), (0, a.jsx)(ee, {}), (0, a.jsx)(es, {}), (0, a.jsx)(h, {}), (0, a.jsx)(p, {})]
+              children: [
+                (0, a.jsx)(Z, {}),
+                (0, a.jsx)(es, {}),
+                (0, a.jsx)(Projects, {}), // Add the Projects component here
+                (0, a.jsx)(ee, {}),
+                (0, a.jsx)(h, {}),
+                (0, a.jsx)(p, {})
+              ]
             }), (0, a.jsx)(b, {})]
           })
         })
