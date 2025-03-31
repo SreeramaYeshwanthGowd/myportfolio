@@ -1342,7 +1342,7 @@
         {
           name: "Crime Scope",
           subtitle: "MLOps",
-          img: "images/crimerate.jpg",
+          img: "images/crimerate_4.jpg",
           link: "https://crimerate-mlops-dashboard.yeshwanthgowdsreerama.com/",
           description: e("Global crime data insights engineered with Apache Spark and MLOps"),
           skills: ["angular", "ts", "html", "scss", "figma"]
