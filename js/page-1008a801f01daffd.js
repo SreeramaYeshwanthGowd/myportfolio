@@ -1336,7 +1336,7 @@
           isOnline: !0,
           img: "images/finance.jpg", 
           link: "https://finance-mlops-dashboard.yeshwanthgowdsreerama.com/",
-          description: e("Monitoring financial markets live with billions of records processing in real-time."),
+          description: e("Monitoring financial markets live with massive volumes of records processing in real-time."),
           skills: ["next", "tailwind", "ts"]
         },
         {
