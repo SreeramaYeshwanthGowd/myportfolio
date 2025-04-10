@@ -310,14 +310,14 @@
         let e = (0, c.useTranslations)("Experience"),
         s = {
           title: e("Front.title"),
-          company: "Avventis Tech",
+          company: "Pfizer",
           date: e("date.current"),
           obligations: [e("Responsibilities.point1"), e("Responsibilities.point2"), e("Responsibilities.point3")],
           achievements: [e("Achievements.point1"), e("Achievements.point2"), e("Achievements.point3")],
         },
         u = {
             title: e("Front_2.title"),
-            company:  "Siliconbricks Technologies",
+            company:  "IBM",
             date: "Apr 2019 / Nov 2021",
             obligations: [e("Responsibilities.point6"), e("Responsibilities.point7"), e("Responsibilities.point8")],
             achievements: [e("Achievements.point6"), e("Achievements.point7"), e("Achievements.point8")],
