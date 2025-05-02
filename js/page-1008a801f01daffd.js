@@ -1179,20 +1179,22 @@
           name: "Databricks",
           isOnline: !0,
           link: "https://credentials.databricks.com/fd64c120-851c-44d8-8982-1bd27766ad43#acc.JX83NS2D",
-          img: "images/databricks_21.png",
+          img: "images/databricks_de.png",
           // gif: "images/databricks_gif.gif",
           description: e("os"),
           skills: ["react", "ts", "scss", "figma"]
-        },
+        }
+        ,
         {
-          name: "Google Cloud",
+          name: "Databricks",
           isOnline: !0,
-          img: "images/gcp_35.png",
+          img: "images/databricks_ml.png",
           // gif: "images/discourse.gif",
-          link: "https://www.credly.com/badges/e879bce1-0a8d-4b6a-929c-4cb276420cf2/linked_in_profile",
+          link: "https://credentials.databricks.com/3dcb658c-1619-425d-9b29-6e4af60d0685",
           description: e("disc"),
           skills: ["next", "tailwind", "ts"]
-        },
+        }
+        ,
         {
           name: "Azure",
           subtitle: "Microsoft Certified",
@@ -1200,7 +1202,8 @@
           link: "https://learn.microsoft.com/api/credentials/share/en-us/YESHWANTHGOWDSREERAMA-2846/6BBFEF31D9BBC071?sharingId",
           description: e("jdm"),
           skills: ["angular", "ts", "html", "scss", "figma"]
-        }];
+        }
+      ];
         return (0, a.jsxs)(f.E.section, {
           initial: {
             opacity: 0
