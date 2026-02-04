@@ -313,7 +313,7 @@
           company: "Messer Americas, Irving, Texas, USA",
           date: e("date.current"),
           obligations: [e("Responsibilities.point1"), e("Responsibilities.point2"), e("Responsibilities.point3")],
-          achievements: [e("Achievements.point1"), e("Achievements.point2"), e("Achievements.point3")],
+          achievements: [e("Achievements.point1"), e("Achievements.point2")],
         },
         u = {
             title: e("Front_2.title"),
