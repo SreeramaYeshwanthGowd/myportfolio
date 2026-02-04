@@ -953,7 +953,7 @@
                 className: "flex items-center gap-6 lg:gap-4 xs:gap-3",
                 children: [s("basedIn"), " ", (0, a.jsx)("span", {
                   className: "gradient_hero",
-                  children: ""
+                  children: "systems"
                 }), (0, a.jsx)(P, {
                   src: "images/city.png"
                 })]
