@@ -317,7 +317,7 @@
         },
         u = {
             title: e("Front_2.title"),
-            company:  "EIM Solutions, Bengaluru,India",
+            company:  "EIM Solutions, Bengaluru, India",
             date: "Aug 2020 / Oct 2021",
             obligations: [e("Responsibilities.point6"), e("Responsibilities.point7"), e("Responsibilities.point8")],
             achievements: [e("Achievements.point6"), e("Achievements.point7"), e("Achievements.point8")],
