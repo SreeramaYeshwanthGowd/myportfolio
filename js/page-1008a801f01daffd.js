@@ -377,7 +377,7 @@
             children: [(0, a.jsx)("span", {
               className: "leading-[1px]",
               children: "\xa9"
-            }), " 2025 Yeshwanth Gowd Sreerama. ", e("rights"), "."]
+            }), " 2026 Yeshwanth Gowd Sreerama. ", e("rights"), "."]
           })]
         })
       }
